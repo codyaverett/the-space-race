@@ -1,0 +1,97 @@
+/* Space background */
+#space {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, #0b0d17, #020202);
+  overflow: hidden;
+}
+
+/* Remove body margin and hide overflow */
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Overlay settings menu */
+#overlay {
+  background: rgba(0, 0, 0, 0.8);
+  font-family: "Orbitron", sans-serif;
+  color: white;
+  font-size: 1em;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  top: 0;
+  left: 0;
+}
+
+/* Settings header */
+#settings {
+  margin-top: 50px;
+  font-size: 2.8em;
+  text-align: center;
+}
+
+/* Parameter labels */
+#parameter {
+  margin-top: 20px;
+  font-size: 1.1em;
+  width: 100%;
+  text-align: center;
+}
+
+/* Center the overlay content */
+#holder {
+  width: 40%;
+  margin: 0 auto;
+}
+
+/* Slider container */
+.slidecontainer {
+  width: 100%;
+}
+
+/* Slider styling */
+.slider {
+  -webkit-appearance: none;
+  margin-top: 30px;
+  width: 100%;
+  height: 2px;
+  background: #d3d3d3;
+  opacity: 0.25;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 0.85;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: solid #0b0d17 6px;
+  cursor: pointer;
+}
+
+/* Resume button */
+#button {
+  margin-top: 40px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #0b0d17;
+  border: 3px solid #ffffff;
+  font-size: 1.75em;
+  font-family: "Orbitron", sans-serif;
+}
+
+#button:hover {
+  background-color: #0b0d17;
+  color: #ffffff;
+}
+
